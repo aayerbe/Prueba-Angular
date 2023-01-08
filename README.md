@@ -6,9 +6,18 @@
 
 Introduciendo el usuario y el repositorio, la aplicación devolverá un listado de las issues del proyecto junto con información relevante.
 
-###Tecnologías utilizadas
+## Instalación
+
+```bash
+pip install foobar
+```
+
+### La aplicación se compone de:
 
 <ul>
-  <li>Hola</li>
-  <li>Hola</li>
+  <li>Angular</li>
+  <li>Patrón Redux</li>
+  <li>Material</li>
+  <li>Pwa para el funcionamiento offline</li>
+  <li>Testing</li>
 </ul>
