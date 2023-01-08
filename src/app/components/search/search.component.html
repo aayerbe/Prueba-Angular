@@ -1,0 +1,23 @@
+<div class="contenedor">
+    <div class="title">
+        <img src="../../../assets/icons/github-mark.png"/>
+        <h1>GITHUB ISSUE SEARCH ENGINE</h1>
+        <p>Browse the list of issues related to a specific project. To get started, type in the Owner & Repository. </p>
+    </div>
+    <div class="search">
+        <mat-form-field>
+            <mat-label>Owner</mat-label>
+                <input matInput placeholder="Ex. LAION-AI" [(ngModel)]="ownerUrl" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Repository</mat-label>
+            <input matInput placeholder="Ex. Open-Assistant" [(ngModel)]="repoUrl"/>
+        </mat-form-field>
+        <label class="error" *ngIf="showError">Something went wrong: {{(error$|async)?.errorMessage}}</label>
+        <button [disabled]="!ownerUrl.length || !repoUrl.length" (click)="getIssues()" mat-stroked-button color="accent">Search</button>
+    </div>
+</div>
+
+
+
+

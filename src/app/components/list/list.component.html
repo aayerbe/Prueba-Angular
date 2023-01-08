@@ -1,0 +1,42 @@
+<div class="container">
+  <img src="../../../assets/icons/github-mark.png"/>
+  <div class="table">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+   
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> 
+        <ng-container>
+          <h2>Issue Information</h2>
+        </ng-container>
+      </th>
+      <td mat-cell *matCellDef="let element" > 
+        <ng-container>
+          {{element.title}}
+          <br/>
+         <span class="issue-info">{{"#"}} {{element.number}} {{"by"}} {{element.user.login}} {{createdAt(element.created_at)}}</span> 
+        </ng-container>
+      </td>
+        </ng-container>
+
+    <ng-container matColumnDef="label">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td  mat-cell *matCellDef="let element" > 
+        <ng-container  *ngFor="let label of (element.labels)">
+          <span class="label"
+          [style.background-color]="'#'+label.color">{{label.name}}</span> 
+        </ng-container>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  </div>
+  <mat-paginator class="paginator" [pageSize]="6"                
+  ></mat-paginator>
+
+  <div class="btn">
+  <button (click)="anotherSearch()"  mat-stroked-button color="accent">Another Search</button>
+  </div>
+</div>

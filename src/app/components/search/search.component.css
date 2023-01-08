@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+.contenedor{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin-bottom: 1rem;
+}
+.title h1{
+    font-family: 'Lato', sans-serif;
+}
+.title img{
+    width:100px;
+    margin: 2rem;
+}
+.title p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem;
+    
+}
+.title{
+    width: 500px;
+    text-align: center;
+}
+.search{
+    
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.error{
+    color: red;
+    margin-bottom:1rem;
+}

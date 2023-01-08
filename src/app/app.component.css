@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+header h1{
+    font-family: 'Open Sans', sans-serif;
+    margin:2rem;
+    padding: 1rem;
+}
+footer{
+    text-align: center;
+}
