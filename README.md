@@ -8,10 +8,24 @@ Introduciendo el usuario y el repositorio, la aplicación devolverá un listado 
 
 ## Instalación
 
+Para instalar las dependencias:
 ```bash
-pip install foobar
+npm install
 ```
+## Scripts
 
+Para ejecutar offline
+```bash
+npm run start-pwa
+```
+Para ejecutar la aplicación
+```bash
+ng serve
+```
+Para ejecutar el test
+```bash
+ng test
+```
 ### La aplicación se compone de:
 
 <ul>
